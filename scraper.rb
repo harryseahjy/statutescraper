@@ -5,6 +5,7 @@ require 'nokogiri'
 url = "https://sso.agc.gov.sg/Act/MA1967"
 html_file = open(url).read
 text_file = Nokogiri::HTML(html_file)
+text_file.search(".prov1")
 
 # Format text according to sections
 
